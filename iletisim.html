@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Smile Clinic</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-tooth"></i>
+                <span>Smile<span class="highlight">Clinic</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hizmetler.html">Hizmetler</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="iletisim.html" class="active">İletişim</a></li>
+            </ul>
+            <a href="iletisim.html" class="btn-primary">Randevu Al</a>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="hizmetler.html">Hizmetler</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="iletisim.html" class="btn-primary">Randevu Al</a></li>
+        </ul>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p>Size yardımcı olmak için buradayız. Randevu alın veya bize ulaşın.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info-card">
+                    <h3>Bize Ulaşın</h3>
+                    <p>Her türlü soru, öneri veya randevu talepleriniz için bizimle iletişime geçebilirsiniz.</p>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adres</h4>
+                            <p>Levent Mah. Kanyon AVM<br>Yanı No:123, Beşiktaş/İstanbul</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>0212 123 45 67<br>0532 123 45 67 (WhatsApp)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-posta</h4>
+                            <p>info@smileclinic.com<br>randevu@smileclinic.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Çalışma Saatleri</h4>
+                            <p>Pazartesi - Cumartesi: 09:00 - 20:00<br>Pazar: Kapalı</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <h4 style="margin-bottom: 15px;">Sosyal Medya</h4>
+                        <div style="display: flex; gap: 15px;">
+                            <a href="#" style="width: 45px; height: 45px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; transition: all 0.3s;"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" style="width: 45px; height: 45px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; transition: all 0.3s;"><i class="fab fa-instagram"></i></a>
+                            <a href="#" style="width: 45px; height: 45px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; transition: all 0.3s;"><i class="fab fa-twitter"></i></a>
+                            <a href="#" style="width: 45px; height: 45px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; transition: all 0.3s;"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h3>Online Randevu Talebi</h3>
+                    <form class="contact-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Ad Soyad *</label>
+                                <input type="text" id="name" name="name" placeholder="Adınız ve soyadınız" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="0532 123 45 67" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-posta</label>
+                                <input type="email" id="email" name="email" placeholder="ornek@mail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Tedavi Türü *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Seçiniz</option>
+                                    <option value="implant">İmplant Tedavisi</option>
+                                    <option value="estetik">Diş Estetiği</option>
+                                    <option value="ortodonti">Ortodonti</option>
+                                    <option value="beyazlatma">Diş Beyazlatma</option>
+                                    <option value="kanal">Kanal Tedavisi</option>
+                                    <option value="cocuk">Çocuk Diş Hekimliği</option>
+                                    <option value="genel">Genel Muayene</option>
+                                    <option value="diger">Diğer</option>
+                                </select>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="date">Tercih Edilen Tarih</label>
+                                <input type="date" id="date" name="date">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="message">Mesajınız</label>
+                                <textarea id="message" name="message" placeholder="Tedavi ile ilgili detayları veya sorularınızı yazabilirsiniz..."></textarea>
+                            </div>
+                            <div class="form-group full-width">
+                                <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                                    <input type="checkbox" name="privacy" required style="width: auto;">
+                                    <span style="font-weight: 400; font-size: 14px; color: var(--gray);">Kişisel verilerimin işlenmesini kabul ediyorum. <a href="#" style="color: var(--primary);">Gizlilik Politikası</a></span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-calendar-check"></i> Randevu Talebi Gönder
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div style="width: 100%; height: 400px; background: var(--light-gray); border-radius: 25px; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 20px;">
+                <i class="fas fa-map-marked-alt" style="font-size: 60px; color: var(--primary);"></i>
+                <h3 style="color: var(--secondary); font-family: 'Playfair Display', serif; font-size: 28px;">Levent, Beşiktaş / İstanbul</h3>
+                <p style="color: var(--gray); max-width: 500px; text-align: center;">Kanyon AVM'nin hemen yanında, metro ve metrobüs duraklarına yürüme mesafesinde. Ücretsiz vale park hizmeti sunuyoruz.</p>
+                <a href="https://maps.google.com" target="_blank" class="btn-outline" style="margin-top: 10px;">
+                    <i class="fas fa-external-link-alt"></i> Google Maps'te Aç
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="services-preview" style="padding: 100px 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">SSS</span>
+                <h2>Sıkça Sorulan Sorular</h2>
+                <p>Merak ettiklerinizi burada bulabilirsiniz</p>
+            </div>
+            <div class="services-grid" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>İlk muayene ücreti ne kadardır?</h3>
+                    <p>İlk muayenemiz 500₺ olup, bu ücret tedavi planlaması ve panoramik röntgen içermektedir. Tedaviye başlarsanız bu ücret tedavi bedelinden düşülür.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>İmplant tedavisi ne kadar sürer?</h3>
+                    <p>Standart implant tedavisi 3-6 ay arasında tamamlanır. Kemik kalitesine ve tedavi planına göre süre değişebilir.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Sigorta geçerli mi?</h3>
+                    <p>Anlaşmalı olduğumuz birçok sigorta şirketi bulunmaktadır. Detaylı bilgi için bizimle iletişime geçebilirsiniz.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>Taksit seçeneği var mı?</h3>
+                    <p>Evet, 12 aya varan taksit seçenekleri sunuyoruz. Kredi kartı, banka havalesi ve nakit ödeme seçenekleri mevcuttur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Hemen Arayın, Size Yardımcı Olalım</h2>
+                <p>Uzman ekibimiz sorularınızı yanıtlamak ve size en uygun tedavi seçeneğini sunmak için hazır</p>
+                <div class="cta-buttons">
+                    <a href="tel:+902121234567" class="btn-white"><i class="fas fa-phone"></i> 0212 123 45 67</a>
+                    <a href="https://wa.me/905321234567" class="btn-outline-white"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i class="fas fa-tooth"></i>
+                        <span>Smile<span class="highlight">Clinic</span></span>
+                    </a>
+                    <p>Modern diş sağlığı hizmetleri ile sizlere sağlıklı ve estetik gülüşler kazandırıyoruz.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hizmetler.html">Hizmetler</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Hizmetlerimiz</h4>
+                    <ul>
+                        <li><a href="hizmetler.html">İmplant Tedavisi</a></li>
+                        <li><a href="hizmetler.html">Diş Estetiği</a></li>
+                        <li><a href="hizmetler.html">Ortodonti</a></li>
+                        <li><a href="hizmetler.html">Diş Beyazlatma</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>İletişim</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Levent Mah. No:123, Beşiktaş/İstanbul</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>0212 123 45 67</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@smileclinic.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Pzt - Cmt: 09:00 - 20:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Smile Clinic. Tüm hakları saklıdır.</p>
+                <div class="footer-badges">
+                    <span><i class="fas fa-shield-alt"></i> SSL Güvenli</span>
+                    <span><i class="fas fa-check-circle"></i> TDB Onaylı</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
